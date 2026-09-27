@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Weather API",
+    "description": "Get weather information for a location.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://wttr.in"
+    }
+  ],
+  "paths": {
+    "/{location}": {
+      "get": {
+        "operationId": "get_weather",
+        "description": "Get current weather for a location.",
+        "parameters": [
+          {
+            "name": "location",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "j1"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Weather information returned successfully."
+          }
+        }
+      }
+    }
+  }
+}

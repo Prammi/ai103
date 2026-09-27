@@ -1,0 +1,11 @@
+Corporate Laptop Policy
+
+Company laptops must use full-disk encryption.
+
+Employees must install critical security updates within seven days
+of notification.
+
+Lost or stolen laptops must be reported to the IT service desk
+within one hour.
+
+Employees must return company laptops when employment ends.

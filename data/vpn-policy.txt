@@ -1,0 +1,14 @@
+Corporate VPN Policy
+
+Employees working outside the corporate network must connect
+through the company VPN.
+
+VPN access requires multi-factor authentication.
+
+VPN credentials expire every 90 days.
+
+Employees receive an expiration notification seven days before
+their VPN credentials expire.
+
+If VPN authentication fails three consecutive times, employees
+should contact the IT service desk.
