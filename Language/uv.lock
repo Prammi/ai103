@@ -188,6 +188,20 @@ wheels = [
 ]
 
 [[package]]
+name = "azure-ai-translation-text"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "azure-core" },
+    { name = "isodate" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/59/10/ea00242bd7483e8a34ae58557f422d3c35088a7b3315493f269903bbdbf7/azure_ai_translation_text-2.0.0.tar.gz", hash = "sha256:a467c87a7c7a2602447fbc882b7ca8a93471b2957ec15b9b6c2b76dbed7dcc72", size = 103907, upload-time = "2026-05-29T01:17:12.538Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/88/c3/06ca8c3bb18cd666e4eadf05dcb5950ffce574068c60521366bacbbacc6b/azure_ai_translation_text-2.0.0-py3-none-any.whl", hash = "sha256:e07d0c90c11606b4f94f430b1ae75dc2f69e8fb4dfa06b666ec0a803db5c323f", size = 105231, upload-time = "2026-05-29T01:17:13.881Z" },
+]
+
+[[package]]
 name = "azure-ai-voicelive"
 version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -807,6 +821,7 @@ source = { editable = "." }
 dependencies = [
     { name = "azure-ai-projects" },
     { name = "azure-ai-textanalytics" },
+    { name = "azure-ai-translation-text" },
     { name = "azure-ai-voicelive", extra = ["aiohttp"] },
     { name = "azure-cognitiveservices-speech" },
     { name = "azure-identity" },
@@ -820,6 +835,7 @@ dependencies = [
 requires-dist = [
     { name = "azure-ai-projects", specifier = ">=2.7.0" },
     { name = "azure-ai-textanalytics", specifier = ">=5.4.0" },
+    { name = "azure-ai-translation-text", specifier = ">=2.0.0" },
     { name = "azure-ai-voicelive", extras = ["aiohttp"], specifier = ">=1.3.0" },
     { name = "azure-cognitiveservices-speech", specifier = ">=1.52.0" },
     { name = "azure-identity", specifier = ">=1.25.3" },

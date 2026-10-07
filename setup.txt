@@ -1,0 +1,4 @@
+uv venv
+uv init
+uv add openai azure-identity ....
+uv run python filename
